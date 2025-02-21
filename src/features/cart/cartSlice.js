@@ -14,7 +14,7 @@ const cartSlice= createSlice({
         },
         deleteItem(state,action){
             state.cart=state.cart.filter((item)=>
-                item.id!==action.payload)
+                item.pizzaId!==action.payload)
 
         },
         increaseItemQuantity(state,action){
